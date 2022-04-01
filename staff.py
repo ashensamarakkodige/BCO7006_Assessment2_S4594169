@@ -11,7 +11,6 @@ totSalary = 0
 arrSalary = []
 lowSalary = 0
 
-
 for row in reader:
     
     if (row[2] != 'salary'):
@@ -25,17 +24,14 @@ for row in reader:
             totSalary += float(row[2])
             managersCount += 1
 
-
 lowSalaryHolder = list(filter(lambda c: float(c[2]) == lowSalary, recodeArray))         
 lowSalaryFName = lowSalaryHolder[0][0]
 lowSalaryLName = lowSalaryHolder[0][1]       
-
-
-
 
 text1 = 'The average salary of managers is ' + str(totSalary/managersCount) + ' dollars.'
 text2 = str(lowSalaryFName)+' '+str(lowSalaryLName)+' has the lowest salary ($' + str(lowSalary) +')'
 
 print(text1)
 print(text2)
+file.close()
         
