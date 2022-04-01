@@ -27,7 +27,11 @@ for row in reader:
 
 
 lowSalaryHolder = list(filter(lambda c: float(c[2]) == lowSalary, recodeArray))         
-print(lowSalaryHolder) 
+lowSalaryFName = lowSalaryHolder[0][0]
+lowSalaryLName = lowSalaryHolder[0][1]       
+
+print(lowSalaryFName)
+print(lowSalaryLName)
 
 
 text1 = 'The average salary of managers is ' + str(totSalary/managersCount) + ' dollars.'
