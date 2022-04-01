@@ -20,6 +20,12 @@ for row in reader:
         arrSalary.append(float(row[2]))
         lowSalary = min(arrSalary)
         
-print(recodeArray)
-print(arrSalary)
-print(lowSalary)
+        if(row[3] == 'Manager'):
+
+            totSalary += float(row[2])
+            managersCount += 1
+
+print(totSalary)
+print(managersCount)
+print(totSalary/managersCount)
+        
