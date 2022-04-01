@@ -25,7 +25,9 @@ for row in reader:
             totSalary += float(row[2])
             managersCount += 1
 
-print(totSalary)
-print(managersCount)
-print(totSalary/managersCount)
+
+text1 = 'The average salary of managers is ' + str(totSalary/managersCount) + ' dollars.'
+
+
+print(text1)
         
