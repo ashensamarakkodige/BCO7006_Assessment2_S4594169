@@ -15,5 +15,11 @@ lowSalary = 0
 for row in reader:
     
     if (row[2] != 'salary'):
-        print(row[2])
         
+        recodeArray.append(row)
+        arrSalary.append(float(row[2]))
+        lowSalary = min(arrSalary)
+        
+print(recodeArray)
+print(arrSalary)
+print(lowSalary)
